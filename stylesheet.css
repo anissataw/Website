@@ -1,5 +1,84 @@
-div {
+body{
+	margin: 0px;
+	height: 100%;
 
 	
-	background: url(Background.png);
 }
+img{
+	
+	height: 80px;
+	width: 200px;
+	padding-top: 0px;
+}
+#container{
+	position: absolute;
+	display: flex;
+	overflow:hidden;
+}
+#container h1{
+	font-family:'Share Tech', sans-serif;
+	font-size: 74px;
+}
+#top{
+
+	border-left:5px solid white;
+}
+#top p{
+	font-family:'Share Tech', sans-serif;
+	font-size: 74px;
+	margin-bottom: -20px;
+	margin-top:-20px;
+
+}
+
+#opener{
+	float: left;
+	width:45%;
+	min-height: 100%;
+	color:White;
+	font-family: Roboto;
+	font-size: 30px;
+	padding-left:10px;
+	padding-top: 100px;
+	margin-top: 0px;
+	border-right: 10px solid white;
+	background-color: #43A047;
+}
+
+#image{
+	width:55%;
+	background:url(images/Background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font:30px consolas;
+	color: white;
+	position: relative;
+}
+
+#navbar{ 
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right:0;
+}
+
+#navbar table{ 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration-line:underline;
+}
+
+
+td{
+	padding:10px; 
+}
+
+
