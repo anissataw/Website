@@ -4,62 +4,21 @@ body{
 }
 
 img{
-	height: 80px;
-	width: 200px;
+	height: 60px;
+	width: 180px;
 	padding-top: 0px;
 	padding-left: 5px;
 }
-
-#container{
-	position: absolute;
-	display: flex;
-	overflow:hidden;
-}
-
-#container h1{
+.content_links a{
 	font-family:'Share Tech', sans-serif;
-	font-size: 74px;
+	font-size: 40px;
+	color: #525A61;
 }
-
-#nav{
-	float: left;
-	width:30%;
-	min-height: 100%;
-	border-right: 10px solid #43A047;
-	background-color: White;
-}
-
-#navbar {
-	text-align: center;
-	font-family: Roboto;
-	font-size: 50px;
-	margin-top:20px;
-}
-
-#navbar p{
-	
-	margin: 0px;
-	padding-top: 50px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid #6D6B6B ;
-}
-
-#navbar a{
-	
-	text-decoration: none;
-	color: #032F41;
-}
-
-#navbar p:hover{
-
-	color: #032F41;
-	text-decoration-line:underline;
-	background-color: #43A047;
-}
-
 
 #image{
-	width:70%;
+	height: 100%;
+    width: 100%;
+	position:absolute;
 	background-color:#032F41; 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -68,7 +27,7 @@ img{
 	font-family: Roboto;
 	font-size: 45px;
 	color: white;
-	position: relative;
+	
 }
 
 
