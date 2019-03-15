@@ -9,6 +9,13 @@ img{
 	padding-top: 0px;
 	padding-left: 5px;
 }
+
+
+.navbar{
+	 position: fixed;
+	 top: 0;
+	 z-index: 1030;
+}
 .content_links a{
 	font-family:'Share Tech', sans-serif;
 	font-size: 40px;
@@ -27,8 +34,6 @@ img{
 	font-family: Roboto;
 	font-size: 45px;
 	color: white;
-	
 }
-
 
 
