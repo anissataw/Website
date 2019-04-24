@@ -1,49 +1,86 @@
 	<!DOCTYPE html>
 	<html>
 	<head>
-		<title>anissatawiah.com</title>
+		<title>A.Tawiah-Software Developer</title>
 		<link rel="icon" href="images/shape.ico">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 
-	<body>
-
-		
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div>
-				<a href="#" class="navbar-right"><img src="images/logo.png"></a>
-			</div>
-			<div>
-				<ul class="nav justify-content-end content_links">
+	<body class="home-image">
+		<nav class="navbar navbar-expand-lg navbar-light nav-bar-fixed-top">
+			<a class="navbar-brand"href="#"><img src="images/logo.png"></a>
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav"aria-controls="collapse-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+ 
+			<div class="navbar-collapse collapse nav justify-content-end" id="collapse-nav">
+				 
+				<ul class="navbar-nav content_links ">
 					<li class="nav-item">
 						<a class="nav-link" href ="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href ="portfolio.html">Portfolio</a>
+						<a class="nav-link" href ="#">Resume</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href ="resume.html">Resume</a>
+						<a class="nav-link" href ="#">Portfolio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href ="articles.html">Articles</a>
+						<a class="nav-link" href ="#">Articles</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href ="form.html">Connect</a>
+						<a class="nav-link" href ="#">Connect</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 			
+		<section>
+			<div id="image">
+				<h1 class="typing" id="Welcome"> Hi, I'm Anissa Tawiah! </h1>
+				
+				<p>
+					Bacon ipsum dolor amet strip steak turducken bresaola pork belly bacon pork loin chuck ball tip cow shoulder pancetta ham hock. Pastrami pork loin chuck meatloaf biltong filet mignon ground round buffalo doner beef salami turkey pork belly t-bone pork chop. Tri-tip filet mignon alcatra, chicken shankle flank leberkas. 
+					<br>Thanks,<br>
+					Anissa
+				</p>
+			</div>
+		</section>
 		
-		<div id="image">
-			<h1 class="typing" id="Welcome"> Hi, I'm Anissa Tawiah! </h1>
-			<p>
-				No… but I'd like to be asked! We just call it a sausage. Steve Holt! Army had half a day.Steve Holt! I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense.
-				Thanks,<br>
-				Anissa
-			</p>
-		</div>
+		<section>
+			<div>
+				<h2>Resume</h2>
+			</div>
+		</section>
+		
+		<section>
+			<div>
+				<h2>Portfolio</h2>
+			</div>
+		</section>
+
+
+		<section>
+			<div>
+				<h2>Contact Form</h2>
+				<p>
+					I'm always looking for new opportunities to expand my skill set. If you know of an opportunity available please reach out to me via ay of the platforms below.
+				</p>
+			</div>
+		</section>
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9">
+			import Typed from 'typed.js';
+			var options = {strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+			typeSpeed: 40}
+			var typed = new Typed(".typing", options);
+		</script>
+
 	</body>
 </html>
