@@ -1,46 +1,61 @@
 body{
 	margin: 0px;
-	height: 100%;	
-	-webkit-scroll-snap-type: y mandatory;
-
+	height: 100%;
+	overflow: auto;
 }
-
-body.home-image{
-
-}
-section{
-	height: 100vh;
-  	width: 100vw;
-  	scroll-snap-align: start;
-}
-img{
-	height: 60px;
-	width: 180px;
-	padding-top: 0px;
-	padding-left: 5px; 
-}
-
 
 .content_links a{
 	font-family:'Share Tech', sans-serif;
 	font-size: 40px;
 	color: #525A61;
 }
-#image{
-	border: 1px solid black;
+.banner{
+	padding: 20px;
 }
-/*#image{
 
-	height: 100%;
-    width: 100%;
-	position:absolute;
-	background-color:#032F41; 
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-left: 40px;
-	padding-top: 80px;
-	font-family: Roboto;
-	font-size: 45px;
+.banner p{
+	font-size: 30px;
+}
+
+nav img{
+	height: 60px;
+	width: 180px;
+	padding-top: 0px;
+	padding-left: 5px; 
+}
+
+.banner{
+	background-color: #183642;
 	color: white;
-}*/
+}
+
+.container {
+	scroll-snap-align: start;
+	font-size: 30px;
+}
+
+.container section{
+	padding: 20px;
+}
+
+section h2{
+	font-size:45px;
+	text-decoration-line: underline;
+	padding-bottom: 30px;
+}
+
+#heading{
+	font-size:35px;
+}
+
+section p{
+	padding-bottom: 20px;
+}
+
+section img{
+	height: 50px;
+	width: 180px;
+}
+
+
 
