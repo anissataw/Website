@@ -1,20 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
 	margin: 0px;
 	height: 100%;
 	overflow: auto;
 }
 
-.content_links a{
+.content-links a {
 	font-family:'Share Tech', sans-serif;
-	font-size: 40px;
-	color: #525A61;
-}
-.banner{
-	padding: 20px;
-}
-
-.banner p{
-	font-size: 30px;
+	color: white;
+	font-size: 35px;
 }
 
 nav img{
@@ -24,9 +21,20 @@ nav img{
 	padding-left: 5px; 
 }
 
+.navbar{
+	background-color: transparent;
+}
+
+
 .banner{
+	height: 100vh;  
 	background-color: #183642;
 	color: white;
+	padding: 15%;
+}
+
+.banner p{
+	font-size: 25px;
 }
 
 .typing {

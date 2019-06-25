@@ -9,36 +9,27 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light nav-bar-fixed-top">
-			<a class="navbar-brand"href="#"><img src="images/logo.png"></a>
-        	
-        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav"aria-controls="collapse-nav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
- 
-			<div class="navbar-collapse collapse nav justify-content-end" id="collapse-nav">
-				 
-				<ul class="navbar-nav content_links ">
-					<li class="nav-item">
-						<a class="nav-link" href ="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href ="#">Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href ="#">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href ="#">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href ="#">Connect</a>
-					</li>					
-				</ul>
-			</div>
-		</nav>
+		<div class=" nav-container">
+			<nav class="navbar navbar-expand-lg fixed-top">
+				<a class="navbar-brand"href="#"><img src="images/white_logo.png"></a>
 
-		<section class="banner">
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+					<div class="navbar-nav content-links">
+						<a href="#home" class="nav-item nav-link">Home</a>
+						<a href="#resume" class="nav-item nav-link">Resume</a>
+						<a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+						<a href="#about" class="nav-item nav-link">About Me</a>
+						<a href="#connect" class="nav-item nav-link">Connect</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<section id="home" class="banner">
 			<div>
 				<h1>
 					Hi I'm Anissa Tawiah
@@ -56,19 +47,19 @@
 		</section>
 
 		<div class ="container">
-		<section class="resume">
-			<div>
-				<h2>My Objectives</h2>
-				<p>
-					Kielbasa strip steak short loin jowl prosciutto buffalo tenderloin brisket
-					porchetta t-bone venison jerky. Andouille rump biltong burgdoggen jowl alcatra, 
-					jerky bacon sausage kielbasa doner fatback chuck. 
-					Sausage pastrami hamburger landjaeger biltong ribeye pork chop, 
-					andouille ham pancetta ham hock short ribs chuck corned beef. 
-					Venison boudin meatloaf andouille drumstick, shankle picanha 
-					salami turducken strip steak.
-				</p>
-				<h2>Work Experiences</h2>
+			<section id="resume">
+				<div>
+					<h2>My Objectives</h2>
+					<p>
+						Kielbasa strip steak short loin jowl prosciutto buffalo tenderloin brisket
+						porchetta t-bone venison jerky. Andouille rump biltong burgdoggen jowl alcatra, 
+						jerky bacon sausage kielbasa doner fatback chuck. 
+						Sausage pastrami hamburger landjaeger biltong ribeye pork chop, 
+						andouille ham pancetta ham hock short ribs chuck corned beef. 
+						Venison boudin meatloaf andouille drumstick, shankle picanha 
+						salami turducken strip steak.
+					</p>
+					<h2>Work Experiences</h2>
 					<h4 id="heading">Bacon ipsum</h4> 
 					<p>
 						Dolor amet. Beef cupim meatball pork loin strip steak. 
@@ -101,13 +92,13 @@
 				</p>
 
 				<p>	
-					If you want to learn a more about my professional profile download a copy of my full resume below.
+					If you want to learn more about my professional profile download a copy of my full resume below.
 				</p>	
 				<a href="https://drive.google.com/open?id=1fizdYY2O0ymGTXFhpw57kHdS3E9HR0O5">Full Resume</a>
 			</div>
 		</section>
 
-		<section class="portfolio">
+		<section id="portfolio">
 			<div>
 				<h2>Portfolio</h2>
 				
@@ -140,7 +131,7 @@
 			</div>
 		</section>
 
-		<section class="about">
+		<section id="about">
 			<div>
 				<h2>A Little Bit About Me</h2>
 				<p>
@@ -155,7 +146,7 @@
 			</div>
 		</section>		
 
-		<section class="connect">
+		<section id="connect">
 			<div>
 				<h2>Let's Connect</h2>
 				<p>
@@ -165,8 +156,8 @@
 				<img src="">
 			</div>
 		</section>
-		</div>
-		<script src="script.js"></script>
+	</div>
+	<script src="script.js"></script>
 
-	</body>
+</body>
 </html>
