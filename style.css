@@ -1,17 +1,46 @@
+
+
+#outerWrap {
+position: relative;
+z-index: 0;
+background-color: #00CCFF;
+height: 400px;
+width: 650px;
+}
+
+ 
+
+#layer1 {
+position: absolute;
+z-index: 2;
+background-color: #6F0;
+height: 250px;
+width: 350px;
+top: 40px;
+left: 40px;
+}
+
+ 
+
+#layer2 {
+position: absolute;
+z-index: ;
+background-color: #FC0;
+height: 250px;
+width: 350px;
+top: 120px;
+left: 260px;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
-body{
+body,html{
 	margin: 0px;
 	height: 100%;
-	overflow: auto;
-}
 
-.content-links a {
-	font-family:'Share Tech', sans-serif;
-	color: white;
-	font-size: 35px;
 }
 
 nav img{
@@ -21,25 +50,63 @@ nav img{
 	padding-left: 5px; 
 }
 
-.navbar{
-	background-color: transparent;
+@media screen and (max-width: 992px) {
+  .navbar {
+    background-color: #00455C;
+  }
+  .banner-content{
+  	padding-top: 200px;
+  }
+  
+}
+
+#content-links a {
+	color: white;
+	font-size: 35px;
+}
+
+#content-links a:hover:nth-child(1) {
+	color: #e57e10;
+}
+
+#content-links a:hover:nth-child(2) {
+	color: #5347b2;
+}
+
+#content-links a:hover:nth-child(3) {
+	color: #d53f33;
+}
+
+#content-links a:hover:nth-child(4) {
+	color: #5fad41;
+}
+
+#content-links a:hover:nth-child(5) {
+	color: #fffc31;
 }
 
 
-.banner{
-	height: 100vh;  
-	background-color: #183642;
+.home-screen{
+	background-image: url(images/banner-background.png);
+	height: 100%;  
 	color: white;
 	padding: 15%;
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size:cover;
+  	display: flex;
 }
 
-.banner p{
-	font-size: 25px;
+.home-content {
+	padding-top: 150px;	
+  	color: white;
 }
 
 .typing {
   border-right: 2px solid white;
-  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
   animation: 
   	blinkTextCursor 800ms steps(40) infinite normal;
 }
@@ -52,34 +119,120 @@ nav img{
             border-right-color: transparent;
       }
 }
+.container-fluid{
+	/**background:url(images/body-background.png); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	**/ 
 
-.container {
-	scroll-snap-align: start;
-	font-size: 30px;
 }
+section{
+	padding-top: 100px;
+	padding-bottom: 8%;
+	font-size: 30px;
 
-.container section{
-	padding: 20px;
 }
 
 section h2{
 	font-size:45px;
-	text-decoration-line: underline;
+	font-weight:600;	
 	padding-bottom: 30px;
-}
-
-#heading{
-	font-size:35px;
 }
 
 section p{
 	padding-bottom: 20px;
+	font-size: 25px;
+}
+.sub-item img{
+	margin-top: 6px;
+	float: left;
+	border-radius: 20px;
+	width: 80px;
+	height: 80px;
 }
 
-section img{
-	height: 50px;
-	width: 180px;
+.sub-item p, .sub-item h4 {
+	overflow: hidden;
+	text-align: left;
+	padding-left: 20px;
 }
 
+.heading{
+	font-size:35px;
+}
+
+.title-img{
+	width: 80px;
+	height: 80px;
+	margin-top: -10px;
+}
+
+
+
+.left{
+	margin-left: 100px; 
+	padding-left:4% ; 
+	background-color: white;
+}
+.skills{
+	padding-top: 50px;
+}
+
+.skill-image{
+	width:150px;
+	height:150px;
+	border-radius: 0%;
+	background-color: gray;
+}
+
+
+.skills button{
+	border: none;
+	background-color:orange;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+
+.experience{
+	background-color: white;
+}
+
+.portfolio-content img{
+	display: inline-block;
+	width:96px; 
+	height:96px;
+}
+
+.card{
+	padding-top: 20px;
+
+}
+
+.card:hover{
+	border-top: 20px solid  #00455C;
+}
+
+.div1{
+	background: white;
+}
+
+
+.about-content{
+	padding-left: 20%;
+}
+
+.btn-square{
+	padding: 10px;
+	height: 40px;
+	width: 40px;
+}
+
+
+.connect-content {
+	padding-top: 200px;
+	padding-left: 80px;
+	margin-bottom: 100px;
+}
 
 

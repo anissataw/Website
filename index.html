@@ -1,163 +1,293 @@
-	<!DOCTYPE html>
-	<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>A.Tawiah-Software Developer</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
 		<link rel="icon" href="images/shape.ico">
+		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<title>A.Tawiah-Software Developer</title>
+
+		<script src="https://kit.fontawesome.com/f6eeb8cef0.js"></script>
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				var scroll = $(window).scrollTop();
+				var width = $(window).innerWidth();  
+				if (width > 993 && scroll < 150) {
+					$(".navbar").css("background" , "transparent");
+
+				}
+
+				else{
+					$(".navbar").css("background" , "#00455C");
+					$(".banner-content").css("padding-top","200px");
+				}
+			})
+		</script>
+
+		<script type="text/javascript">
+			$(function () {
+				$('[data-toggle="popover"]').popover()
+			})
+		</script>
+
+		<script type="text/javascript">
+			$(function(){ 
+				var navMain = $('.navbarCollapse');
+				navMain.on("click", "a", null, function () {
+					navMain.collapse('hide');
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(" .card" ).hover(
+					function(){
+						$(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+					}
+					, function() {
+						$(this).removeClass('shadow-lg');
+					}
+					);
+			});
+		</script>	
 	</head>
-
 	<body>
-		<div class=" nav-container">
-			<nav class="navbar navbar-expand-lg fixed-top">
-				<a class="navbar-brand"href="#"><img src="images/white_logo.png"></a>
-
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-					<div class="navbar-nav content-links">
-						<a href="#home" class="nav-item nav-link">Home</a>
-						<a href="#resume" class="nav-item nav-link">Resume</a>
-						<a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-						<a href="#about" class="nav-item nav-link">About Me</a>
-						<a href="#connect" class="nav-item nav-link">Connect</a>
-					</div>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<a class="navbar-brand" href="#"><img src="images/white_logo.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end navbarCollapse" id="navbarCollapse">
+				<div  id="content-links" class="navbar-nav">
+					<a href="#home" class="nav-item nav-link" id="home-link">Home</a>
+					<a href="#resume" class="nav-item nav-link resume-link">Resume</a>
+					<a href="#portfolio" class="nav-item nav-link portfolio-link">Projects</a>
+					<a href="#about" class="nav-item nav-link about-link" >About Me</a>
+					<a href="#connect" class="nav-item nav-link connect-link">Connect</a>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 
-		<section id="home" class="banner">
-			<div>
-				<h1>
+		<section id="home" class="home-screen">
+			<div class="home-content">
+				<h1 style="font-weight: bold;">
 					Hi I'm Anissa Tawiah
 				</h1>
 				<h3>
 					<span class="typing" data-words='["Software Developer. IT Professional. General Nerd."]'></span>
 				</h3>
-				
-				<p>
-					Bacon ipsum dolor amet strip steak turducken bresaola pork belly bacon pork loin chuck ball.
-					<br>Thanks for stopping by,<br>
-					- Anissa T.
-				</p>
 			</div>
 		</section>
+		<div class="container-fluid">
 
-		<div class ="container">
-			<section id="resume">
+			<section id="resume" class="resume-content dflex">
+				<div class="row">
+					<div class="col-md-6 pl-5">
+						<div class="row w-75 left  ">
+							<h2 style="font-weight:600;">Professional Snapshot</h2>
+							<p>
+								Kielbasa strip steak short loin jowl prosciutto buffalo tenderloin brisket
+								porchetta t-bone venison jerky. Andouille rump biltong burgdoggen jowl alcatra, 
+								jerky bacon sausage kielbasa doner fatback chuck. 
+								Sausage pastrami hamburger landjaeger biltong ribeye pork chop, 
+								andouille ham pancetta ham hock short ribs chuck corned beef. 
+								Venison boudin meatloaf andouille drumstick, shankle picanha 
+								salami turducken strip steak.
+							</p>
+						</div>	
+						<div class=" skills row w-75  text-center">
+							<div class="col-md-4 text-center">
+								<div class="mr-auto ml-auto" style="width: 150px; height: 150px; background-color: gray;"></div>
+								<button type="button" class="btn btn-secondary  data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+								sagittis lacus vel augue laoreet rutrum faucibus.">
+								Skill 1
+								</button>
+							</div>
+							<div class="col-md-4 text-center">
+								<div class="mr-auto ml-auto" style="width: 150px; height: 150px; background-color: gray;"></div>
+								<button type="button" class="btn btn-secondary  data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+								sagittis lacus vel augue laoreet rutrum faucibus.">
+								Skill 1
+								</button>
+							</div>
+							<div class="col-md-4 text-center">
+								<div class="mr-auto ml-auto" style="width: 150px; height: 150px; background-color: gray;"></div>
+								<button type="button" class="btn btn-secondary  data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+								sagittis lacus vel augue laoreet rutrum faucibus.">
+								Skill 1
+								</button>
+							</div>
+						</div>
+					</div>		
+					<div class="experience col-md-6 pl-2 mx-auto">
+						<h2>Work Experience</h2>
+						<div class=" w-75">
+							<div class="sub-item">
+								<img src="images/twc_logo.png">
+								<h4 class="heading">Jr. Developer Intern</h4>
+								<p>
+									Dolor amet. Beef cupim meatball pork loin strip steak. 
+									Tongue bresaola boudin strip steak sirloin frankfurter 
+									filet mignon pig ribeye.
+								</p>
+							</div>
+
+							<div class="sub-item">
+								<img src="images/equifax_logo.png">
+								<h4 class="heading">Software Developer Intern</h4>
+								<p>
+									Burgdoggen pork belly pancetta boudin brisket, 
+									filet mignon doner strip steak ham buffalo kielbasa.
+									Tri-tip flank tail beef ribs, chicken turducken ham hock sausage.
+									Picanha chicken tongue pork loin meatloaf, pork belly drumstick. Boudin tenderloin tri-tip spare ribs,
+									kielbasa pig turkey doner picanha ham ham hock 
+									strip steak short loin andouille.
+								</p>
+							</div>
+
+							<div class="sub-item">
+								<img src="images/icons8-maintenance.png" style="border: 4px solid #9d9e9a">
+								<h4 class="heading">IT Technician</h4>
+								<p>
+									Picanha chicken tongue pork loin meatloaf, 
+									pork belly drumstick. Boudin tenderloin tri-tip spare ribs,
+									kielbasa pig turkey doner picanha ham ham hock 
+									strip steak short loin andouille.
+								</p>
+							</div>
+
+							<div class="sub-item">
+								<img src="images/icons8-housekeeping.png" style="border: 4px solid #7ac180">
+								<h4 class="heading">Additional Positions</h4>
+								<p>
+									Strip steak chicken beef ribs. Pork belly turducken filet 
+									mignon rump porchetta jerky short loin
+									bresaola ribeye venison landjaeger.
+								</p>
+							</div>
+							<div class="text-center" >				
+								<a class="btn btn-primary btn-lg" style="justify-content: center;" href="https://drive.google.com/file/d/18-lNAvke4oWar3Ppx7obCF8uc_g-LjzZ/view?usp=sharing" target="_blank">Full Resume</a>
+							</div>	
+						</div>	
+					</div>
+				</div>
+			</section>
+
+			<section id="portfolio" class="d-flex justify-content-bootstrap portfolio-content text-center">
 				<div>
-					<h2>My Objectives</h2>
+					<h2 style="display: inline-block">Projects</h2>
+					<div class=" row mx-auto  w-75 card-deck">
+						<div class="col-md-4 card col-sm-2">
+							<div>				
+								<img class="card-img-top center" src="images/icons8-spotify.png">
+							</div>	
+							<h4 class="card-title">Project 1</h4>
+							<p class="card-text">
+								Tongue alcatra rump pancetta picanha tenderloin. Kevin biltong meatloaf 
+								prosciutto chicken pig pork loin. Shank sausage jowl, 
+								turducken bresaola strip steak buffalo pork loin meatball.
+								Sausage buffalo boudin swine burgdoggen, jowl shoulder shankle venison.
+							</p>
+							<div class="card-body d-flex flex-column">
+								<a href="#" class="card-link mt-auto">Card link</a>
+							</div>	
+						</div>
+
+						<div class="card col-md-4 col-sm-2">
+							<div>
+								<img class="card-img-top center" src="images/icons8-schedule.png" style="border-radius: 0px;">
+							</div>
+							<h4 class="card-title">Project 2</h4>
+							<p class="card-text">
+								Shankle meatball beef, drumstick short ribs pastrami doner pancetta. 
+								Alcatra tri-tip pork belly capicola salami ribeye. 
+								Pork pancetta turkey venison short ribs andouille ham 
+								hock boudin corned beef pork loin shank. 
+							</p>
+							<div class="card-body d-flex flex-column">
+								<a href="#" class="card-link mt-auto">Card link</a>
+							</div>
+						</div>
+
+						<div class="card col-md-4 col-sm-2">
+							<div>
+								<img class="card-img-top center" src="images/icons8-film-reel.png">
+							</div>
+							<h4 class="card-title">Project 3</h4>
+							<p class="card-text">	
+								Picanha pork loin porchetta rump drumstick hamburger, pig bacon tail. 
+								Doner ham t-bone beef fatback cupim strip steak prosciutto. Tri-tip 
+								leberkas capicola shoulder. Ribeye leberkas prosciutto tongue cupim.
+							</p>
+							<div class="card-body d-flex flex-column">
+								<a href="#" class="card-link mt-auto">Card link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="w-75 about-content">
+							<h2>A Little Bit About Me</h2>
+							<p>
+								Spicy jalapeno bacon ipsum dolor amet leberkas turducken beef short ribs, 
+								bresaola shankle ground round tenderloin jerky jowl. Buffalo salami alcatra, 
+								flank corned beef swine fatback shankle capicola pork belly. Sirloin filet 
+								mignon beef landjaeger meatball ham shankle. Picanha capicola pancetta bacon
+								drumstick bresaola pork shank kielbasa. Spare ribs venison landjaeger, beef ribs 
+								boudin pastrami cow. Tri-tip beef rump biltong shank frankfurter,
+								tail landjaeger sirloin sausage chuck short ribs.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<img  style="width:50%; height:75%;" src="images/placeholder.png">
+					</div>
+				</div>
+			</section>		
+
+			<section id="connect" class="connect-content">
+				<div class="col-12 w-50 mx-auto">
+					<div>
+						<h2 style="display: inline-block;">Let's Connect</h2>
+						<img class="title-img" style="display: inline-block;" src="images/icons8-talk.png">
+					</div>
+
 					<p>
-						Kielbasa strip steak short loin jowl prosciutto buffalo tenderloin brisket
-						porchetta t-bone venison jerky. Andouille rump biltong burgdoggen jowl alcatra, 
-						jerky bacon sausage kielbasa doner fatback chuck. 
-						Sausage pastrami hamburger landjaeger biltong ribeye pork chop, 
-						andouille ham pancetta ham hock short ribs chuck corned beef. 
-						Venison boudin meatloaf andouille drumstick, shankle picanha 
-						salami turducken strip steak.
+						If your looking to collaborate and have and idea, expanding your network, or just want to grab coffee and talk about video games please reach out through any of the platforms below.
 					</p>
-					<h2>Work Experiences</h2>
-					<h4 id="heading">Bacon ipsum</h4> 
-					<p>
-						Dolor amet. Beef cupim meatball pork loin strip steak. 
-						Tongue bresaola boudin strip steak sirloin frankfurter 
-						filet mignon pig ribeye.
-					</p>
+					<div class="mx-auto">
+						<a type="button" class="btn btn-primary btn-square" href="https://linkedin.com/in/anissatawiah"  target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a type="button" class="btn btn btn-dark btn-square" href="https://github.com/anissataw"  target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
 
-					<h4 id="heading">Capicola bacon ham hock</h4>
-					<p>
-						Burgdoggen pork belly pancetta boudin brisket, 
-						filet mignon doner strip steak ham buffalo kielbasa. 
-						Tri-tip flank tail beef ribs, 
-						chicken turducken ham hock sausage 
-					</p>
+						<button type="button" class=" btn btn-danger btn-square" data-toggle="popover" title="Email Me!" data-content="anissatawiah.dev@gmail.com">
+							<i class="fas fa-at"></i>
+						</button>
 
-					<h4 id="heading">Doner prosciutto</h4>
-					<p>
-						Picanha chicken tongue pork loin meatloaf, 
-						pork belly drumstick. Boudin tenderloin tri-tip spare ribs, 
-						kielbasa pig turkey doner picanha ham ham hock 
-						strip steak short loin andouille.
-					</p>
-
-					<h4 id="heading">Pork chop</h4>
-					<p>
-						Strip steak chicken beef ribs. Pork belly turducken filet 
-						mignon rump porchetta jerky short loin
-						bresaola ribeye venison landjaeger.
-					</p>
-				</p>
-
-				<p>	
-					If you want to learn more about my professional profile download a copy of my full resume below.
-				</p>	
-				<a href="https://drive.google.com/open?id=1fizdYY2O0ymGTXFhpw57kHdS3E9HR0O5">Full Resume</a>
-			</div>
-		</section>
-
-		<section id="portfolio">
-			<div>
-				<h2>Portfolio</h2>
-				
-				<h4 id="heading">Project 1</h4>
-				<p>
-					Tongue alcatra rump pancetta picanha tenderloin. Kevin biltong meatloaf 
-					prosciutto chicken pig pork loin. Shank sausage jowl, 
-					turducken bresaola strip steak buffalo pork loin meatball. S
-					ausage buffalo boudin swine burgdoggen, jowl shoulder shankle venison.
-				</p>
-				
-				<h4 id="heading">Project 2</h4>
-				<p>
-					Shankle meatball beef, drumstick short ribs pastrami doner pancetta. 
-					Alcatra tri-tip pork belly capicola salami ribeye. 
-					Pork pancetta turkey venison short ribs andouille ham 
-					hock boudin corned beef pork loin shank. 
-				</p>
-
-				<h4 id="heading">Project 3</h4>
-				<p>	
-					Picanha pork loin porchetta rump drumstick hamburger, pig bacon tail. 
-					Doner ham t-bone beef fatback cupim strip steak prosciutto. Tri-tip 
-					leberkas capicola shoulder. Ribeye leberkas prosciutto tongue cupim.
-				</p>
-
-				<p>For current updates of what I've been working on check out my GitHub page!</p>
-				<p>GitHub image</p>
-				<a href="https://github.com/anissataw"><img src=""></a>
-			</div>
-		</section>
-
-		<section id="about">
-			<div>
-				<h2>A Little Bit About Me</h2>
-				<p>
-					Spicy jalapeno bacon ipsum dolor amet leberkas turducken beef short ribs, 
-					bresaola shankle ground round tenderloin jerky jowl. Buffalo salami alcatra, 
-					flank corned beef swine fatback shankle capicola pork belly. Sirloin filet 
-					mignon beef landjaeger meatball ham shankle. Picanha capicola pancetta bacon
-					drumstick bresaola pork shank kielbasa. Spare ribs venison landjaeger, beef ribs 
-					boudin pastrami cow. Tri-tip beef rump biltong shank frankfurter,
-					tail landjaeger sirloin sausage chuck short ribs.
-				</p>
-			</div>
-		</section>		
-
-		<section id="connect">
-			<div>
-				<h2>Let's Connect</h2>
-				<p>
-					If your looking to collaborate and have and idea, expanding your network, or just want to grab coffee and talk about video games please reach out through any of the platforms below.
-				</p>
-				<img src="">
-				<img src="">
-			</div>
-		</section>
-	</div>
-	<script src="script.js"></script>
-
-</body>
+					</div>
+				</div>
+			</section>	
+		</div>	
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
