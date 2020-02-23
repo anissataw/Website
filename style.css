@@ -70,7 +70,7 @@ nav img{
 }
 
 #content-links a:hover:nth-child(2) {
-	color: #5347b2;
+	color: #3a6ea5;
 }
 
 #content-links a:hover:nth-child(3) {
@@ -143,6 +143,10 @@ section p{
 	padding-bottom: 20px;
 	font-size: 25px;
 }
+.navbar{
+	font-weight: 600;
+}
+
 .sub-item img{
 	margin-top: 6px;
 	float: left;
