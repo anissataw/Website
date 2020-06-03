@@ -60,6 +60,23 @@ nav img{
   
 }
 
+@media  (min-width: 992px) {
+  .connect-width {
+    max-width: 50%;
+	}
+
+  
+}
+
+@media  (max-width: 442px) {
+
+	.title-img{
+  	background: red;
+    display: none !important;
+	}
+  
+}
+
 #content-links a {
 	color: white;
 	font-size: 35px;
@@ -167,9 +184,9 @@ section p{
 }
 
 .title-img{
-	width: 80px;
+	
 	height: 80px;
-	margin-top: -10px;
+
 }
 
 
@@ -214,9 +231,6 @@ section p{
 }
 
 
-.about-content{
-	padding-left: 20%;
-}
 
 .btn-square{
 	padding: 10px;
@@ -226,7 +240,7 @@ section p{
 
 
 .connect-content {
-	padding-left: 80px;
+	
 	margin-bottom: 100px;
 }
 
